@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS</title>
+    <Script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></Script>
+    <Script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></Script>
+    <link rel="stylesheet" href="./learn_more/style.css">
+</head>
+<body>
+    <div class="learn-more-text">
+        Learn More IT
+    </div>
+    <script>
+        const postItem = React.createElement(
+            'div',
+            {
+                className: 'post-item'
+            },
+            React.createElement(
+               'h2',
+               {
+                title: 'Learn More',
+               },
+               'Learn More'
+            ),
+            React.createElement('p', {}, 'Learn More on GitHub <a href="https://github.com/')
+       )
+
+       const root = document.getElementById('root')
+
+       ReactDOM.render(postItem, root)
+    </script>
+</body>
+</html>
